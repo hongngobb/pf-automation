@@ -1,0 +1,320 @@
+{
+  "config": {
+    "configFile": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/playwright.config.ts",
+    "rootDir": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/node_modules/allure-playwright/dist/index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/tests/**/*.test.ts",
+          "**/tests/**/*.spec.ts"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/tests/**/*.test.ts",
+          "**/tests/**/*.spec.ts"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "v2/editor/editor.test.ts",
+      "file": "v2/editor/editor.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "V2 Editor Tests",
+          "file": "v2/editor/editor.test.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Image drag and drop tests",
+              "file": "v2/editor/editor.test.ts",
+              "line": 75,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should drag and drop image from elements panel to canvas",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 300000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 210980,
+                          "error": {
+                            "message": "Error: Page listing page not properly loaded. Title: hongngotest1 · PageFly - RC · Shopify, URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages",
+                            "stack": "Error: Page listing page not properly loaded. Title: hongngotest1 · PageFly - RC · Shopify, URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n    at verifyPageListingLoaded (/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts:41:11)\n    at /Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/tests/v2/editor/editor.test.ts:79:7",
+                            "location": {
+                              "file": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts",
+                              "column": 11,
+                              "line": 41
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../pages/page-listing-page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page title:'\u001b[39m\u001b[33m,\u001b[39m pageTitle)\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page URL:'\u001b[39m\u001b[33m,\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Page listing page not properly loaded. Title: '\u001b[39m \u001b[33m+\u001b[39m pageTitle \u001b[33m+\u001b[39m \u001b[32m', URL: '\u001b[39m \u001b[33m+\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts",
+                                "column": 11,
+                                "line": 41
+                              },
+                              "message": "Error: Page listing page not properly loaded. Title: hongngotest1 · PageFly - RC · Shopify, URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n\n\u001b[90m   at \u001b[39m../pages/page-listing-page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page title:'\u001b[39m\u001b[33m,\u001b[39m pageTitle)\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page URL:'\u001b[39m\u001b[33m,\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Page listing page not properly loaded. Title: '\u001b[39m \u001b[33m+\u001b[39m pageTitle \u001b[33m+\u001b[39m \u001b[32m', URL: '\u001b[39m \u001b[33m+\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m }\n \u001b[90m 44 |\u001b[39m\u001b[0m\n\u001b[2m    at verifyPageListingLoaded (/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts:41:11)\u001b[22m\n\u001b[2m    at /Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/tests/v2/editor/editor.test.ts:79:7\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Warning: Page load timeout, continuing anyway...\n"
+                            },
+                            {
+                              "text": "Current URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            },
+                            {
+                              "text": "Warning: Page load timeout, continuing anyway...\n"
+                            },
+                            {
+                              "text": "Current URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            },
+                            {
+                              "text": "Warning: Page load timeout, continuing anyway...\n"
+                            },
+                            {
+                              "text": "Current URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            },
+                            {
+                              "text": "Page title: hongngotest1 · PageFly - RC · Shopify\n"
+                            },
+                            {
+                              "text": "Page URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-18T04:25:17.672Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results/v2-editor-editor-V2-Editor-2b66c-om-elements-panel-to-canvas-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results/v2-editor-editor-V2-Editor-2b66c-om-elements-panel-to-canvas-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results/v2-editor-editor-V2-Editor-2b66c-om-elements-panel-to-canvas-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts",
+                            "column": 11,
+                            "line": 41
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "fdd64a3d3c19130773fc-3f303b2535b21b2e5cf2",
+                  "file": "v2/editor/editor.test.ts",
+                  "line": 91,
+                  "column": 9
+                },
+                {
+                  "title": "should drag and drop image after selecting it in canvas",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 300000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 207368,
+                          "error": {
+                            "message": "Error: Page listing page not properly loaded. Title: hongngotest1 · PageFly - RC · Shopify, URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages",
+                            "stack": "Error: Page listing page not properly loaded. Title: hongngotest1 · PageFly - RC · Shopify, URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n    at verifyPageListingLoaded (/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts:41:11)\n    at /Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/tests/v2/editor/editor.test.ts:79:7",
+                            "location": {
+                              "file": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts",
+                              "column": 11,
+                              "line": 41
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m../pages/page-listing-page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page title:'\u001b[39m\u001b[33m,\u001b[39m pageTitle)\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page URL:'\u001b[39m\u001b[33m,\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Page listing page not properly loaded. Title: '\u001b[39m \u001b[33m+\u001b[39m pageTitle \u001b[33m+\u001b[39m \u001b[32m', URL: '\u001b[39m \u001b[33m+\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m }\n \u001b[90m 44 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts",
+                                "column": 11,
+                                "line": 41
+                              },
+                              "message": "Error: Page listing page not properly loaded. Title: hongngotest1 · PageFly - RC · Shopify, URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n\n\u001b[90m   at \u001b[39m../pages/page-listing-page.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page title:'\u001b[39m\u001b[33m,\u001b[39m pageTitle)\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Page URL:'\u001b[39m\u001b[33m,\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Page listing page not properly loaded. Title: '\u001b[39m \u001b[33m+\u001b[39m pageTitle \u001b[33m+\u001b[39m \u001b[32m', URL: '\u001b[39m \u001b[33m+\u001b[39m pageUrl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m }\n \u001b[90m 44 |\u001b[39m\u001b[0m\n\u001b[2m    at verifyPageListingLoaded (/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts:41:11)\u001b[22m\n\u001b[2m    at /Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/tests/v2/editor/editor.test.ts:79:7\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Warning: Page load timeout, continuing anyway...\n"
+                            },
+                            {
+                              "text": "Current URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            },
+                            {
+                              "text": "Warning: Page load timeout, continuing anyway...\n"
+                            },
+                            {
+                              "text": "Current URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            },
+                            {
+                              "text": "Warning: Page load timeout, continuing anyway...\n"
+                            },
+                            {
+                              "text": "Current URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            },
+                            {
+                              "text": "Page title: hongngotest1 · PageFly - RC · Shopify\n"
+                            },
+                            {
+                              "text": "Page URL: https://admin.shopify.com/store/hongngotest1/apps/rc-pagefly-1/pages\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-09-18T04:25:17.671Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results/v2-editor-editor-V2-Editor-d6ca9-fter-selecting-it-in-canvas-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results/v2-editor-editor-V2-Editor-d6ca9-fter-selecting-it-in-canvas-chromium/video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/test-results/v2-editor-editor-V2-Editor-d6ca9-fter-selecting-it-in-canvas-chromium/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/tt/Documents/pfcompany convert/pfcompany_playwright/src/pages/page-listing-page.ts",
+                            "column": 11,
+                            "line": 41
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "fdd64a3d3c19130773fc-064ff187860e047a2af1",
+                  "file": "v2/editor/editor.test.ts",
+                  "line": 136,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-18T04:25:17.216Z",
+    "duration": 212695.613,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

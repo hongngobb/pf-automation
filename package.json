@@ -1,0 +1,50 @@
+{
+    "name": "pfcompany-playwright",
+    "version": "1.0.0",
+    "description": "PageFly Company Playwright Test Automation",
+    "main": "index.js",
+    "scripts": {
+        "test": "playwright test",
+        "test:headed": "playwright test --headed",
+        "test:ui": "playwright test --ui",
+        "test:debug": "playwright test --debug",
+        "test:report": "allure serve allure-results",
+        "test:install": "playwright install",
+        "test:codegen": "playwright codegen",
+        "test:v2": "playwright test src/tests/v2",
+        "test:v1": "playwright test src/tests/v1",
+        "test:api": "playwright test src/tests/api",
+        "test:suites": "playwright test src/tests/suites",
+        "test:editor": "playwright test src/tests/v2/editor",
+        "test:ab-testing": "playwright test src/tests/v2/ab-testing",
+        "test:legacy": "playwright test src/tests/v1/legacy",
+        "setup-auth": "node scripts/setup-auth-simple.js",
+        "clear-auth": "node scripts/clear-auth.js",
+        "lint": "eslint src/**/*.ts",
+        "lint:fix": "eslint src/**/*.ts --fix",
+        "playwright": "playwright"
+    },
+    "keywords": [
+        "playwright",
+        "testing",
+        "automation",
+        "pagefly"
+    ],
+    "author": "PageFly Team",
+    "license": "MIT",
+    "devDependencies": {
+        "@playwright/test": "^1.40.0",
+        "@types/node": "^20.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "allure-playwright": "^2.10.0",
+        "eslint": "^8.0.0",
+        "eslint-config-prettier": "^9.0.0",
+        "prettier": "^3.0.0",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@faker-js/faker": "^8.0.0",
+        "dotenv": "^16.0.0"
+    }
+}
